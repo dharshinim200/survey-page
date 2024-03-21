@@ -1,0 +1,63 @@
+<div id="head">
+<div id="form">
+<h2>GOOGLE SURVEY FORM</h2>
+<p>1.What is your name?</p>
+<input type="text" maxlength="25">
+<p>2.Gender?</p>
+<div><input type="radio" name="test">Male</div>
+<div><input type="radio" name="test">Female</div>
+<div><input type="radio" name="test">Others</div>
+<p>3.Date of birth?</p>
+<div><input type="date"></div>
+<p>4.Skills you learned??</p>
+<div><input type="checkbox">Front End</div>
+<div><input type="checkbox">Back End</div>
+<div><input type="checkbox">Full Stack</div>
+<div><input type="checkbox">Others</div>
+<p>5.Email Id?</p>
+<div><input type="email" name="emailField" required></div>
+<p>6.Any suggestions??</p>
+<div><input type="text" id="txt"></div>
+<input type="submit" id="sub" onclick="blink(count++)">
+</div>
+</div>
+<style>
+   #head{
+      background-color: rgb(158, 216, 158);
+   }
+   #form{
+      width: 20%;
+      border: 1px solid black;
+      overflow-y: auto;
+      align-content: center;
+      margin-left: 500px;
+      background-color: whitesmoke;
+      padding-left: 100px;
+   }
+   #sub{
+      margin: 30px 0px 20px 0px ;
+      width: 200px;
+   }
+   #sub:hover{
+           background-color: green;
+   }
+   #txt{
+        height: 50px;
+   }
+</style>
+<script>
+  var res=document.getElementById("sub");
+  var fm =document.getElementById("form");
+  var em =document.getElementById("eml");
+  var count=0;
+  function blink(){
+   if(count>1)
+         alert("alredy registered!!");
+         else
+         alert("Your details was submitted successfully")
+  }
+ 
+  
+   
+</script>
+
